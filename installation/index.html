@@ -264,7 +264,9 @@ On Mac OS X it creates a launchd service. Simply run:</li>
 </ol>
 <pre><code># install logagent package globally 
 sudo npm i -g @sematext/logagent
-sudo logagent-setup LOGSENE_TOKEN
+sudo logagent-setup -i LOGSENE_TOKEN
+# for EU region: 
+# sudo logagent-setup -i LOGSENE_TOKEN -u logsene-receiver.eu.sematext.com
 </code></pre>
 
 <p>The setup script generates the configuraton file in <code>/etc/sematext/logagent.conf</code>.
